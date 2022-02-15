@@ -1,0 +1,173 @@
+@-webkit-keyframes Transition_Init {
+  0% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes Transition_Init {
+  0% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes Transition_Init_Button {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes Transition_Init_Button {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes Transition_Exit {
+  0% {
+    opacity: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0%;
+  }
+}
+
+@keyframes Transition_Exit {
+  0% {
+    opacity: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0%;
+  }
+}
+
+@-webkit-keyframes Transition_Exit_button {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes Transition_Exit_button {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form .Container_Inputs {
+  -webkit-animation: Transition_Init 2s normal;
+          animation: Transition_Init 2s normal;
+}
+
+.form .Container_Inputs input {
+  font-weight: bold;
+}
+
+.form .Container_Inputs label {
+  font-weight: bold;
+}
+
+.form .Container_Inputs .Container_Icon_View {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form .Container_Inputs .Container_Icon_View i {
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: -29px;
+}
+
+.form .ResetPassword button {
+  -webkit-animation: Transition_Init 1.3s normal;
+          animation: Transition_Init 1.3s normal;
+  font-weight: bold;
+}
+
+.form button {
+  -webkit-animation: Transition_Init_Button 3s normal;
+          animation: Transition_Init_Button 3s normal;
+}
+
+.form .Container_Header {
+  width: 100%;
+  height: 8%;
+  margin-top: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: Transition_Init 2.3s normal;
+          animation: Transition_Init 2.3s normal;
+}
+
+.form .Container_Header h1 {
+  margin-top: -23px;
+  color: #4e50a8;
+  text-shadow: 1px 1px 1px #38417c;
+}
+/*# sourceMappingURL=Login_User.css.map */

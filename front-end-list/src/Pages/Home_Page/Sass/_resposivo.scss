@@ -1,0 +1,23 @@
+@media (max-width: 320px) {
+    .Container_Buttons {
+        button {
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 345px){
+    .Container_Buttons {
+        button {
+            margin: 5% 5%;
+        }
+    }
+}
+
+@media (max-width: 630px) and (max-height: 280px){
+    .Container_Buttons {
+        button {
+            margin: 3% 5%;
+        }
+    }
+}

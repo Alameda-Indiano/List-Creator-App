@@ -1,0 +1,45 @@
+@keyframes Transition_Init {
+    0% {
+        transform: translateX(-250px);
+        opacity: 0%;
+    }  
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes Transition_Init_Button {
+    0% {
+        opacity: 0%;
+    }   
+    50% {
+        opacity: 0%;
+    }   
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes Transition_Exit {
+    0% {
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-250px);
+        opacity: 0%;
+    }  
+}
+
+@keyframes Transition_Exit_button {
+    0% {
+        opacity: 100%;
+    }   
+    50% {
+        opacity: 0%;
+    }   
+    100% {
+        opacity: 0%;
+    }
+}

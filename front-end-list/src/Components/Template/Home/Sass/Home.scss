@@ -1,0 +1,104 @@
+@import "../../../../Styles/Colors/color";
+@import "../../../../Assets/Animations/Transition_Forms";
+
+.Container_Home_Page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color5;
+
+    .Container_Icon {
+        width: 10%;
+        height: 100%;
+
+        display: flex;
+
+        animation: Transition_Init 2.3s normal;
+
+        .Container_Alert {
+            width: 95%;
+            height: auto;
+    
+            margin-top: 2%;
+    
+            position: absolute;
+    
+            display: flex;
+            justify-content: flex-end;
+        };
+
+        i {    
+            color: $color4;
+            text-shadow: 0.5px 2px 1px $color6;
+            font-size: 20px;
+            transform: rotateY(200deg);
+
+            width: 30px;
+            height: 30px;
+            padding: 20px;
+
+            margin-top: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            &:active {
+                color: rgba($color6, .4);
+                text-shadow: 0.5px 2px 3px $color6;
+            }
+        }
+    }
+
+    .Container_Info {
+        width: 43%;
+        height: 100%;
+
+        margin-right: 5%;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 1.25rem;
+        }
+    
+        .Container_Buttons {
+            width: 100%;
+            height: auto;
+    
+            display: flex;
+            justify-content: center;
+    
+            button {
+                margin: 10% 5%;
+            }
+        }
+    }
+
+    .Container_Img {
+        margin-top: -60px;
+        width: 37%;
+        height: auto;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@import "./resposivo";

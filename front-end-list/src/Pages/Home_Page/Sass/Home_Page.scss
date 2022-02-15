@@ -1,0 +1,24 @@
+@import "../../../Styles/Colors/color";
+@import "../../../Assets/Animations/Transition_Forms";
+
+p {
+    font-size: 1.25rem;
+    
+    animation: Transition_Init 2s normal;
+}
+
+.Container_Buttons {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+
+    animation: Transition_Init 2s normal;
+
+    button {
+        margin: 10% 5%;
+    }
+}
+
+@import "./resposivo";

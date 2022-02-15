@@ -1,0 +1,23 @@
+@import "./Colors/color";
+
+$theme-colors: (
+    //Temas customizados:
+    "color3": $color3,
+    "color4": $color4,
+    "color5": $color5,
+    "color6": $color6,
+
+    //Temas Padrões do Bootstrap:
+    "primary":    $primary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger
+);
+
+$input-focus-width: .2rem !default;
+$input-focus-color: $color6 !default;
+$input-focus-border-color: rgba($color4, .5) !default;
+$input-focus-box-shadow: 0 0 0 $input-focus-width rgba($color4, .25) !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

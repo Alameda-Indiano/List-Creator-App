@@ -1,0 +1,13 @@
+.Container_Loading {
+    animation: LoadingAnimation 1.7s infinite;
+    margin-top: -2px;
+}
+
+@keyframes LoadingAnimation {
+    0% {
+        transform: rotate(-360deg);
+    }   
+    100% {
+        transform: rotate(0deg);
+    }
+}
