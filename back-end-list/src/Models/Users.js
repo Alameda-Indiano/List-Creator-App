@@ -1,14 +1,14 @@
 const DataBase = require("../DataBase/Base");
 const bcrypt = require("bcryptjs");
 
-const SchemaUsers = new  DataBase.Schema({
+const SchemaUsers = new DataBase.Schema({
     name: {
         type: String,
-        required: true
+        require: true
     },
     email: {
         type: String,
-        required: true,
+        require: true,
         unique: true,
         lowercase: true
     },
@@ -22,8 +22,12 @@ const SchemaUsers = new  DataBase.Schema({
     },
     senha: {
         type: String,
-        required: true,
+        require: true,
         select: false
+    },
+    creatdAt: {
+        type: Date,
+        default: Date.now
     }
 });
 

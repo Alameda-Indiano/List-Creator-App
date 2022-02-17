@@ -15,11 +15,14 @@ app.use(cors({
     optionsSuccessStatus: 204
 }));
 
-const router = require("./Routes/Users");
+const routerUser = require("./Routes/Users");
+const routerProject = require("./Routes/Project");
 
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false }));
-app.use(router);
+
+app.use(routerUser);
+app.use(routerProject);
 
 app.listen(port, () => {
     console.info(`Back-End está ON na porta ${port}`);
